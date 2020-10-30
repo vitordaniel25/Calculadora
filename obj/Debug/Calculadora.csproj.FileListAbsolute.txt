@@ -1,0 +1,8 @@
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
