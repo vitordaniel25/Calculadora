@@ -47,15 +47,12 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnResultado = new System.Windows.Forms.Button();
             this.txbTela = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(92, 188);
+            this.btn1.Location = new System.Drawing.Point(7, 231);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(100, 100);
             this.btn1.TabIndex = 0;
@@ -66,7 +63,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(198, 188);
+            this.btn2.Location = new System.Drawing.Point(113, 231);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(100, 100);
             this.btn2.TabIndex = 0;
@@ -77,7 +74,7 @@
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(304, 188);
+            this.btn3.Location = new System.Drawing.Point(219, 231);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(100, 100);
             this.btn3.TabIndex = 0;
@@ -88,7 +85,7 @@
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(92, 294);
+            this.btn4.Location = new System.Drawing.Point(7, 337);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(100, 100);
             this.btn4.TabIndex = 0;
@@ -99,7 +96,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(198, 294);
+            this.btn5.Location = new System.Drawing.Point(113, 337);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(100, 100);
             this.btn5.TabIndex = 0;
@@ -110,7 +107,7 @@
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(304, 294);
+            this.btn6.Location = new System.Drawing.Point(219, 337);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(100, 100);
             this.btn6.TabIndex = 0;
@@ -121,7 +118,7 @@
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(92, 400);
+            this.btn7.Location = new System.Drawing.Point(7, 443);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(100, 100);
             this.btn7.TabIndex = 0;
@@ -132,7 +129,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(198, 400);
+            this.btn8.Location = new System.Drawing.Point(113, 443);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(100, 100);
             this.btn8.TabIndex = 0;
@@ -143,7 +140,7 @@
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(304, 400);
+            this.btn9.Location = new System.Drawing.Point(219, 443);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(100, 100);
             this.btn9.TabIndex = 0;
@@ -154,17 +151,18 @@
             // btnVirgula
             // 
             this.btnVirgula.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVirgula.Location = new System.Drawing.Point(304, 506);
+            this.btnVirgula.Location = new System.Drawing.Point(219, 549);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(100, 100);
             this.btnVirgula.TabIndex = 0;
             this.btnVirgula.Text = ",";
             this.btnVirgula.UseVisualStyleBackColor = true;
+            this.btnVirgula.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(410, 400);
+            this.btnMultiplicar.Location = new System.Drawing.Point(325, 443);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(100, 100);
             this.btnMultiplicar.TabIndex = 0;
@@ -175,7 +173,7 @@
             // btnSubtrair
             // 
             this.btnSubtrair.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtrair.Location = new System.Drawing.Point(410, 294);
+            this.btnSubtrair.Location = new System.Drawing.Point(325, 337);
             this.btnSubtrair.Name = "btnSubtrair";
             this.btnSubtrair.Size = new System.Drawing.Size(100, 100);
             this.btnSubtrair.TabIndex = 0;
@@ -186,7 +184,7 @@
             // btnSomar
             // 
             this.btnSomar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.Location = new System.Drawing.Point(410, 188);
+            this.btnSomar.Location = new System.Drawing.Point(325, 231);
             this.btnSomar.Name = "btnSomar";
             this.btnSomar.Size = new System.Drawing.Size(100, 100);
             this.btnSomar.TabIndex = 0;
@@ -197,7 +195,7 @@
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(410, 506);
+            this.btnDividir.Location = new System.Drawing.Point(325, 549);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(100, 100);
             this.btnDividir.TabIndex = 0;
@@ -208,7 +206,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(92, 506);
+            this.btn0.Location = new System.Drawing.Point(7, 549);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(206, 100);
             this.btn0.TabIndex = 0;
@@ -219,17 +217,18 @@
             // btnApagar
             // 
             this.btnApagar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagar.Location = new System.Drawing.Point(516, 188);
+            this.btnApagar.Location = new System.Drawing.Point(431, 231);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(100, 100);
             this.btnApagar.TabIndex = 0;
             this.btnApagar.Text = "<";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(516, 294);
+            this.btnLimpar.Location = new System.Drawing.Point(431, 337);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(100, 100);
             this.btnLimpar.TabIndex = 0;
@@ -240,7 +239,7 @@
             // btnResultado
             // 
             this.btnResultado.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.Location = new System.Drawing.Point(516, 400);
+            this.btnResultado.Location = new System.Drawing.Point(431, 443);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(100, 206);
             this.btnResultado.TabIndex = 0;
@@ -251,44 +250,17 @@
             // txbTela
             // 
             this.txbTela.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTela.Location = new System.Drawing.Point(92, 74);
+            this.txbTela.Location = new System.Drawing.Point(7, 12);
             this.txbTela.Multiline = true;
             this.txbTela.Name = "txbTela";
-            this.txbTela.Size = new System.Drawing.Size(523, 99);
+            this.txbTela.Size = new System.Drawing.Size(523, 213);
             this.txbTela.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(704, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 104);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(704, 205);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(276, 104);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label1";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(704, 354);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 104);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 645);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(542, 653);
             this.Controls.Add(this.txbTela);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btn9);
@@ -309,7 +281,7 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -337,9 +309,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.TextBox txbTela;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }
 
