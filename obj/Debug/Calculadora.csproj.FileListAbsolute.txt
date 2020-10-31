@@ -6,3 +6,4 @@ D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.
 D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
 D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+D:\Estudos\Programação\Projetos\Calculadora\Calculadora\obj\Debug\Calculadora.Form1.resources
