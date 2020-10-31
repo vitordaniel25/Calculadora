@@ -47,12 +47,13 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnResultado = new System.Windows.Forms.Button();
             this.txbTela = new System.Windows.Forms.TextBox();
+            this.txbResultado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(7, 231);
+            this.btn1.Location = new System.Drawing.Point(6, 320);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(100, 100);
             this.btn1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(113, 231);
+            this.btn2.Location = new System.Drawing.Point(112, 320);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(100, 100);
             this.btn2.TabIndex = 0;
@@ -74,7 +75,7 @@
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(219, 231);
+            this.btn3.Location = new System.Drawing.Point(218, 320);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(100, 100);
             this.btn3.TabIndex = 0;
@@ -85,7 +86,7 @@
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(7, 337);
+            this.btn4.Location = new System.Drawing.Point(6, 426);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(100, 100);
             this.btn4.TabIndex = 0;
@@ -96,7 +97,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(113, 337);
+            this.btn5.Location = new System.Drawing.Point(112, 426);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(100, 100);
             this.btn5.TabIndex = 0;
@@ -107,7 +108,7 @@
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(219, 337);
+            this.btn6.Location = new System.Drawing.Point(218, 426);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(100, 100);
             this.btn6.TabIndex = 0;
@@ -118,7 +119,7 @@
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(7, 443);
+            this.btn7.Location = new System.Drawing.Point(6, 532);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(100, 100);
             this.btn7.TabIndex = 0;
@@ -129,7 +130,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(113, 443);
+            this.btn8.Location = new System.Drawing.Point(112, 532);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(100, 100);
             this.btn8.TabIndex = 0;
@@ -140,7 +141,7 @@
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(219, 443);
+            this.btn9.Location = new System.Drawing.Point(218, 532);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(100, 100);
             this.btn9.TabIndex = 0;
@@ -151,7 +152,7 @@
             // btnVirgula
             // 
             this.btnVirgula.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVirgula.Location = new System.Drawing.Point(219, 549);
+            this.btnVirgula.Location = new System.Drawing.Point(218, 638);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(100, 100);
             this.btnVirgula.TabIndex = 0;
@@ -162,7 +163,7 @@
             // btnMultiplicar
             // 
             this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(325, 443);
+            this.btnMultiplicar.Location = new System.Drawing.Point(324, 532);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(100, 100);
             this.btnMultiplicar.TabIndex = 0;
@@ -173,7 +174,7 @@
             // btnSubtrair
             // 
             this.btnSubtrair.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtrair.Location = new System.Drawing.Point(325, 337);
+            this.btnSubtrair.Location = new System.Drawing.Point(324, 426);
             this.btnSubtrair.Name = "btnSubtrair";
             this.btnSubtrair.Size = new System.Drawing.Size(100, 100);
             this.btnSubtrair.TabIndex = 0;
@@ -184,7 +185,7 @@
             // btnSomar
             // 
             this.btnSomar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.Location = new System.Drawing.Point(325, 231);
+            this.btnSomar.Location = new System.Drawing.Point(324, 320);
             this.btnSomar.Name = "btnSomar";
             this.btnSomar.Size = new System.Drawing.Size(100, 100);
             this.btnSomar.TabIndex = 0;
@@ -195,7 +196,7 @@
             // btnDividir
             // 
             this.btnDividir.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(325, 549);
+            this.btnDividir.Location = new System.Drawing.Point(324, 638);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(100, 100);
             this.btnDividir.TabIndex = 0;
@@ -206,7 +207,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(7, 549);
+            this.btn0.Location = new System.Drawing.Point(6, 638);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(206, 100);
             this.btn0.TabIndex = 0;
@@ -217,7 +218,7 @@
             // btnApagar
             // 
             this.btnApagar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagar.Location = new System.Drawing.Point(431, 231);
+            this.btnApagar.Location = new System.Drawing.Point(430, 320);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(100, 100);
             this.btnApagar.TabIndex = 0;
@@ -228,7 +229,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(431, 337);
+            this.btnLimpar.Location = new System.Drawing.Point(430, 426);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(100, 100);
             this.btnLimpar.TabIndex = 0;
@@ -239,7 +240,7 @@
             // btnResultado
             // 
             this.btnResultado.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.Location = new System.Drawing.Point(431, 443);
+            this.btnResultado.Location = new System.Drawing.Point(430, 532);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(100, 206);
             this.btnResultado.TabIndex = 0;
@@ -250,17 +251,28 @@
             // txbTela
             // 
             this.txbTela.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTela.Location = new System.Drawing.Point(7, 12);
+            this.txbTela.Location = new System.Drawing.Point(6, 12);
             this.txbTela.Multiline = true;
             this.txbTela.Name = "txbTela";
             this.txbTela.Size = new System.Drawing.Size(523, 213);
             this.txbTela.TabIndex = 1;
             // 
+            // txbResultado
+            // 
+            this.txbResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbResultado.Location = new System.Drawing.Point(7, 231);
+            this.txbResultado.Multiline = true;
+            this.txbResultado.Name = "txbResultado";
+            this.txbResultado.Size = new System.Drawing.Size(523, 83);
+            this.txbResultado.TabIndex = 1;
+            this.txbResultado.Text = "\n";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 653);
+            this.ClientSize = new System.Drawing.Size(537, 745);
+            this.Controls.Add(this.txbResultado);
             this.Controls.Add(this.txbTela);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btn9);
@@ -309,6 +321,7 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnResultado;
         private System.Windows.Forms.TextBox txbTela;
+        private System.Windows.Forms.TextBox txbResultado;
     }
 }
 
