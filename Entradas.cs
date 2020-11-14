@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Calculadora
 {
+    public static class SistemaCheio
+    {
+        public static bool sistemaCheio;
+
+    }
+
     public class Entradas
     {
         public string a = "";
@@ -111,15 +117,24 @@ namespace Calculadora
             else if (!hExists)
             {
                 h = h + valor;
+
             }
         }
         public string resultado()
         {
-
+            if (h != "")
+            {
+                SistemaCheio.sistemaCheio = true;
+            }
+            else
+            {
+                SistemaCheio.sistemaCheio = false;
+            }
             Calculos calc = new Calculos();
             string result = calc.resultado(abMult, bcMult, cdMult, deMult, efMult, fgMult, ghMult,
                 abDiv, bcDiv, cdDiv, deDiv, efDiv, fgDiv, ghDiv, a, b, c, d, e, f, g, h);
             return (result);
+            
         }
 
         public void multiplicar()

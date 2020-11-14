@@ -36,6 +36,7 @@ namespace Calculadora
             }
 
             return (entrada.resultado());
+
         }
         
         public void clear()

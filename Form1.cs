@@ -22,23 +22,25 @@ namespace Calculadora
             switch (e.KeyChar)
             {
                 case (char)10: result(); break;
-                case (char)48: txbTela.Text += "0"; result(); break;
-                case (char)49: txbTela.Text += "1"; result(); break;
-                case (char)50: txbTela.Text += "2"; result(); break;
-                case (char)51: txbTela.Text += "3"; result(); break;
-                case (char)52: txbTela.Text += "4"; result(); break;
-                case (char)53: txbTela.Text += "5"; result(); break;
-                case (char)54: txbTela.Text += "6"; result(); break;
-                case (char)55: txbTela.Text += "7"; result(); break;
-                case (char)56: txbTela.Text += "8"; result(); break;
-                case (char)57: txbTela.Text += "9"; result(); break;
-                case (char)45: if (operador()) { txbTela.Text += "-"; } result(); break;
-                case (char)43: if (operador()) { txbTela.Text += "+"; } result(); break;
-                case (char)47: if (operador()) { txbTela.Text += "/"; } result(); break;
-                case (char)42: if (operador()) { txbTela.Text += "x"; } result(); break;
+                case (char)44: if (virgula()) { txbTela2.Text += ","; } result(); break;
+                case (char)46: if (virgula()) { txbTela2.Text += ","; } result(); break;
+                case (char)48: txbTela2.Text += "0"; result(); break;
+                case (char)49: txbTela2.Text += "1"; result(); break;
+                case (char)50: txbTela2.Text += "2"; result(); break;
+                case (char)51: txbTela2.Text += "3"; result(); break;
+                case (char)52: txbTela2.Text += "4"; result(); break;
+                case (char)53: txbTela2.Text += "5"; result(); break;
+                case (char)54: txbTela2.Text += "6"; result(); break;
+                case (char)55: txbTela2.Text += "7"; result(); break;
+                case (char)56: txbTela2.Text += "8"; result(); break;
+                case (char)57: txbTela2.Text += "9"; result(); break;
+                case (char)45: if (operador()) { txbTela2.Text += "-"; } result(); break;
+                case (char)43: if (operador()) { txbTela2.Text += "+"; } result(); break;
+                case (char)47: if (operador()) { txbTela2.Text += "/"; } result(); break;
+                case (char)42: if (operador()) { txbTela2.Text += "x"; } result(); break;
                 case (char)8: apagar(); result(); break;
                 case (char)61: result(); break;
-                case (char)27: dados.clear(); txbTela.Text = ""; break;
+                case (char)27: dados.clear(); txbTela2.Text = ""; break;
 
 
             }
@@ -49,7 +51,21 @@ namespace Calculadora
         private void result()
         {
             btnResultado.Focus();
-            txbResultado.Text = dados.gerarDados(txbTela.Text);
+            txbResultado.Text = dados.gerarDados(txbTela2.Text);
+            if (SistemaCheio.sistemaCheio)
+            {
+                btnSomar.Enabled = false;
+                btnMultiplicar.Enabled = false;
+                btnSubtrair.Enabled = false;
+                btnDividir.Enabled = false;
+            }
+            else
+            {
+                btnSomar.Enabled = true;
+                btnMultiplicar.Enabled = true;
+                btnSubtrair.Enabled = true;
+                btnDividir.Enabled = true;
+            }
             dados.clear();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -63,61 +79,61 @@ namespace Calculadora
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "1";
+            txbTela2.Text += "1";
             result();
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "2";
+            txbTela2.Text += "2";
             result();
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "3";
+            txbTela2.Text += "3";
             result();
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "4";
+            txbTela2.Text += "4";
             result();
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "5";
+            txbTela2.Text += "5";
             result();
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "6";
+            txbTela2.Text += "6";
             result();
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "7";
+            txbTela2.Text += "7";
             result();
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "8";
+            txbTela2.Text += "8";
             result();
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "9";
+            txbTela2.Text += "9";
             result();
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            txbTela.Text += "0";
+            txbTela2.Text += "0";
             result();
         }
 
@@ -125,7 +141,7 @@ namespace Calculadora
         {
             if (operador())
             {
-                txbTela.Text += "+";
+                txbTela2.Text += "+";
             }
 
         }
@@ -134,7 +150,7 @@ namespace Calculadora
         {
             if (operador())
             {
-                txbTela.Text += "x";
+                txbTela2.Text += "x";
             }
         }
 
@@ -142,7 +158,7 @@ namespace Calculadora
         {
             if (operador())
             {
-                txbTela.Text += "/";
+                txbTela2.Text += "/";
             }
 
         }
@@ -150,31 +166,33 @@ namespace Calculadora
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             dados.clear();
-            txbTela.Text = "";
+            txbTela2.Text = "";
         }
 
         private void btnSubtrair_Click(object sender, EventArgs e)
         {
             if (operador())
             {
-                txbTela.Text += "-";
+                txbTela2.Text += "-";
             }
         }
 
         private void btnVirgula_Click(object sender, EventArgs e)
         {
-            txbTela.Text += ",";
+            if (virgula())
+            {
+                txbTela2.Text += ",";
 
-
+            }
         }
 
         private bool operador()
         {
-            char op = 'a';
+            char op;
             bool operador = true;
-            if (txbTela.Text.Length > 0)
+            if (txbTela2.Text.Length > 0)
             {
-                op = txbTela.Text.Last<char>();
+                op = txbTela2.Text.Last<char>();
                 if ((op.Equals('+')) || (op.Equals('/')) || (op.Equals('x')) || (op.Equals('-')))
                 {
                     operador = false;
@@ -183,6 +201,24 @@ namespace Calculadora
             else
             {
                 operador = false;
+            }
+            if (SistemaCheio.sistemaCheio)
+            {
+                operador = false;
+            }
+            return (operador);
+        }
+        private bool virgula()
+        {
+            char op;
+            bool operador = true;
+            if (txbTela2.Text.Length > 0)
+            {
+                op = txbTela2.Text.Last<char>();
+                if (op.Equals(','))
+                {
+                    operador = false;
+                }
             }
             return (operador);
         }
@@ -194,10 +230,55 @@ namespace Calculadora
         }
         private void apagar()
         {
-            if (txbTela.Text.Length > 0)
+            if (txbTela2.Text.Length > 0)
             {
-                txbTela.Text = txbTela.Text.Remove(txbTela.Text.Length - 1);
+                txbTela2.Text = txbTela2.Text.Remove(txbTela2.Text.Length - 1);
             }
+        }
+
+        private void btnBlue_Click(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ForeColor = System.Drawing.Color.White;
+            panel2.BackColor = System.Drawing.Color.White;
+            txbTela2.BackColor = System.Drawing.Color.RoyalBlue;
+            txbTela2.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void btnBlack_Click(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.Red;
+            panel2.BackColor = System.Drawing.Color.Red;
+            txbTela2.BackColor = System.Drawing.Color.Black;
+            txbTela2.ForeColor = System.Drawing.Color.Red;
+        }
+
+        private void btnLime_Click(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.Lime;
+            panel2.BackColor = System.Drawing.Color.Lime;
+            txbTela2.BackColor = System.Drawing.Color.Black;
+            txbTela2.ForeColor = System.Drawing.Color.Lime;
+        }
+
+        private void btnPurple_Click(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.Purple;
+            this.ForeColor = System.Drawing.Color.White;
+            panel2.BackColor = System.Drawing.Color.White;
+            txbTela2.BackColor = System.Drawing.Color.Purple;
+            txbTela2.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void btnOrange_Click(object sender, EventArgs e)
+        {
+            this.BackColor = System.Drawing.Color.Orange;
+            this.ForeColor = System.Drawing.Color.White;
+            panel2.BackColor = System.Drawing.Color.White;
+            txbTela2.BackColor = System.Drawing.Color.Orange;
+            txbTela2.ForeColor = System.Drawing.Color.White;
         }
     }
 }
